@@ -10,8 +10,6 @@ int main(void){
 	uint32_t thousand;
 	uint32_t hundred;
 	uint32_t result;
-	char track[] = "취약점";
-	char name[] = "김태휘";
 
 	one = fopen("thousand.bin","rb");
 	two = fopen("five-hundred.bin","rb");
@@ -22,7 +20,6 @@ int main(void){
 	hundred = ntohl(hundred);
 	result = thousand + hundred;
 	
-	printf("[bob10][%s]add-nbo[%s]\n", track, name);
 	printf("%d(%#x) + %d(%#x) = %d(%#x)", thousand, thousand, hundred, hundred, result, result);
 
 	fclose(one);
